@@ -18,6 +18,7 @@ export interface Props {
   pageSettings?: PageSettings;
   iframeTitle?: IframeTitle;
   LoadingSpinner?: LoadingSpinner;
+  scrolling?: string;
 }
 
 const defaultStyles = {
@@ -64,6 +65,7 @@ class InlineWidget extends React.Component<Props, { isLoading: boolean }> {
           frameBorder="0"
           title={this.props.iframeTitle || "Calendly Scheduling Page"}
           onLoad={this.onLoad}
+          scrolling={this.props.scrolling || "auto"}
           src={src}
         ></iframe>
       </div>
