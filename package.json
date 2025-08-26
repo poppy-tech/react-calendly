@@ -23,6 +23,9 @@
     "start": "rollup -c -w",
     "prepare": "npm run build"
   },
+  "dependencies": {
+    "postcss": "^8.4.31"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
